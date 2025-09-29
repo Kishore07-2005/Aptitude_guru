@@ -1,0 +1,1298 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aptitude Guru Hem</title>
+  <link rel="icon" type="image/png" href="C:\Users\KISHORE KUMAR\Desktop\HTML training\images\guru.PNG">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* First Page Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: white;
+      text-align: center;
+    }
+    .text h5 {
+      margin: 0px;
+      font-weight: 600;
+      color: #555;
+      font-size: 80%;
+    }
+    .text h1 {
+      margin: 0px;
+      font-size: 60%;
+      font-weight: 700;
+      color: black;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .nav-left img {
+      width: 30px;
+    }
+    .nav-left a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      margin-left: 15px;
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .cart-icon {
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      border-radius: 5px;
+    }
+    .login {
+      background: #f5f5f5;
+    }
+    .signup {
+      background: red;
+      color: white;
+    }
+    .hero-section {
+      padding: 50px;
+    }
+    .hero-section h1 {
+      font-size: 75px;
+      color: red;
+      font-weight: bold;
+    }
+    .hero-section p {
+      color: rgb(12, 12, 12);
+      font-size: 25px;
+      max-width: 800px;
+      margin: 10px auto;
+    }
+    .hero-section img {
+      margin-left: 950px;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .buttons .btn {
+      margin: 5px;
+      padding: 12px 20px;
+    }
+
+    /* Second Page Styles */
+    /* Reset and Base Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background-color: #ffffff;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        background-color: #ff3a54;
+        padding: 40px 80px;
+        margin: 40px auto;
+        max-width: 1200px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        box-shadow: 0 5px 15px rgba(255, 58, 84, 0.2);
+    }
+
+    .cta-content {
+        max-width: 60%;
+    }
+
+    .cta-content h2 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .cta-content p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .register-btn {
+        background-color: white;
+        color: #333;
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .register-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Trusted By Section */
+    .trusted-by {
+        padding: 60px 20px;
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        color: #111;
+    }
+
+    .stats-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .stat-box {
+        width: 250px;
+        height: 200px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        position: relative;
+    }
+
+    .stat-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 20px 0;
+    }
+
+    .stat-number {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .stat-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+
+    .stat-sublabel {
+        font-size: 14px;
+        color: #f0a500;
+        margin-top: 5px;
+    }
+
+    .red-text {
+        color: #ff3a54;
+    }
+
+    .stat-icon-top, .stat-icon-bottom {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: white;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .stat-icon-top {
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .stat-icon-bottom {
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Color Variations */
+    .teal .stat-icon-top {
+        background-color: #00bfa6;
+    }
+
+    .teal {
+        border-left: 5px solid #00bfa6;
+        border-bottom: 5px solid #00bfa6;
+    }
+
+    .blue .stat-icon-bottom {
+        background-color: #00b0ff;
+    }
+
+    .blue {
+        border-right: 5px solid #00b0ff;
+        border-top: 5px solid #00b0ff;
+    }
+
+    .orange .stat-icon-top {
+        background-color: #f0a500;
+    }
+
+    .orange {
+        border-left: 5px solid #f0a500;
+        border-bottom: 5px solid #f0a500;
+    }
+
+    .red .stat-icon-bottom {
+        background-color: #ff3a54;
+    }
+
+    .red {
+        border-right: 5px solid #ff3a54;
+        border-top: 5px solid #ff3a54;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 1200px) {
+        .cta-section {
+            margin: 40px 20px;
+            padding: 30px 50px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .stats-container {
+            gap: 50px 20px;
+        }
+        
+        .stat-box {
+            width: 220px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .cta-section {
+            flex-direction: column;
+            text-align: center;
+            padding: 40px 30px;
+        }
+        
+        .cta-content {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+        
+        .cta-content h2 {
+            font-size: 30px;
+        }
+        
+        .cta-content p {
+            font-size: 16px;
+        }
+        
+        .section-title {
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .cta-section {
+            border-radius: 30px;
+            padding: 30px 20px;
+        }
+        
+        .register-btn {
+            padding: 12px 25px;
+            font-size: 14px;
+        }
+        
+        .stats-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .stat-box {
+            width: 280px;
+        }
+    }
+
+    /* Promise Section Styles */
+    /* Base Styles */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Promise Section */
+    .promise-section {
+        padding: 60px 0;
+    }
+
+    .promise-section .section-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #111;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .promise-section .section-subtitle {
+        font-size: 18px;
+        color: #666;
+        text-align: center;
+        margin-bottom: 50px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .promise-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .promise-card {
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .promise-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-line {
+        height: 4px;
+        width: 100%;
+    }
+
+    .card-content {
+        padding: 30px 25px;
+    }
+
+    .card-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 22px;
+    }
+
+    .card-title {
+        font-size: 22px;
+        color: #333;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .card-description {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    /* Colors */
+    .teal {
+        background-color: #20c997;
+    }
+
+    .orange {
+        background-color: #fd7e14;
+    }
+
+    .blue {
+        background-color: #0dcaf0;
+    }
+
+    .purple {
+        background-color: #6f42c1;
+    }
+
+    .red {
+        background-color: #dc3545;
+    }
+
+    .green {
+        background-color: #198754;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+        .promise-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .promise-section .section-title {
+            font-size: 30px;
+        }
+        
+        .promise-section .section-subtitle {
+            font-size: 16px;
+        }
+        
+        .card-title {
+            font-size: 20px;
+        }
+        
+        .card-description {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .promise-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .promise-section {
+            padding: 40px 0;
+        }
+        
+        .promise-section .section-title {
+            font-size: 28px;
+        }
+        
+        .promise-section .section-subtitle {
+            margin-bottom: 30px;
+        }
+    }
+
+    /* FAQ Section Styles */
+    .faq-section {
+        padding: 60px 0;
+        background-color: #f8f9fa;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpath fill='%23f8f9fa' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%23f6f7f8' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%23f3f5f6' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%23f1f3f4' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%23eef1f2' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%23ebeff0' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%23e9edee' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%23e6ebec' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%23e4e9ea' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%23e1e7e8' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .highlight {
+        color: #ff3a54;
+    }
+
+    .faq-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .faq-column {
+        flex: 1;
+    }
+
+    .faq-item {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+    .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        cursor: pointer;
+    }
+
+    .faq-question span {
+        flex: 1;
+        font-weight: 500;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .faq-icon {
+        width: 30px;
+        height: 30px;
+        background-color: #ff3a54;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        flex-shrink: 0;
+        margin-left: 15px;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        background-color: #ff3a54;
+        padding: 60px 0;
+        color: white;
+    }
+
+    .contact-section .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-content {
+        max-width: 50%;
+    }
+
+    .contact-title {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .contact-description {
+        font-size: 18px;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+    .btn-contact {
+        display: inline-block;
+        background-color: white;
+        color: #333;
+        padding: 12px 30px;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .btn-contact:hover {
+        background-color: #f8f9fa;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-image {
+        width: 300px;
+        height: 300px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: white;
+        padding: 60px 0 20px;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+        background-color: #ff3a54;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-title {
+        font-weight: bold;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .logo-subtitle {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .footer-columns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer-column {
+        min-width: 150px;
+    }
+
+    .footer-heading {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        color: #666;
+        font-size: 14px;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: #ff3a54;
+    }
+
+    .footer-social {
+        margin-left: 30px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        background-color: #f1f1f1;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        font-size: 18px;
+        transition: all 0.3s;
+    }
+
+    .social-icon:hover {
+        background-color: #ff3a54;
+        color: white;
+        transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid #e1e1e1;
+        color: #666;
+        font-size: 14px;
+    }
+
+    .footer-links-bottom {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-links-bottom a {
+        color: #666;
+        transition: color 0.3s;
+    }
+
+    .footer-links-bottom a:hover {
+        color: #ff3a54;
+    }
+
+    @media (max-width: 1200px) {
+        .container {
+            padding: 0 30px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .faq-container {
+            flex-direction: column;
+        }
+        
+        .contact-section .container {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .contact-content {
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+        
+        .footer-columns {
+            justify-content: space-between;
+        }
+        
+        .footer-column {
+            min-width: 120px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .section-title {
+            font-size: 30px;
+        }
+        
+        .contact-title {
+            font-size: 36px;
+        }
+        
+        .contact-description {
+            font-size: 16px;
+        }
+        
+        .footer-columns {
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .footer-column {
+            width: 100%;
+        }
+        
+        .footer-social {
+            margin-left: 0;
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .section-title {
+            font-size: 26px;
+        }
+        
+        .faq-question span {
+            font-size: 14px;
+        }
+        
+        .contact-title {
+            font-size: 32px;
+        }
+        
+        .footer-links-bottom {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-left">
+      <img src="C:\Users\KISHORE KUMAR\Desktop\HTML training\images\guru.PNG" alt="Logo">
+      <div class="text">
+        <h5>APTITUDE GURU</h5>
+        <h1>HEMCHANDAR</h1>
+      </div>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Our Services</a>
+      <a href="#">My Courses</a>
+    </div>
+    <div class="nav-right">
+      <i class="fa fa-shopping-cart cart-icon"></i>
+      <button class="btn login">Log In</button>
+      <button class="btn signup">Sign Up</button>
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <h1><span id="typed-text"></span></h1>
+    <p>At AGH, we shape futures and build skills that .</p>
+    <img src="C:\Users\KISHORE KUMAR\Desktop\HTML training\images\pen.jpg" alt="">
+    <img src="C:\Users\KISHORE KUMAR\Desktop\HTML training\images\text.jpg" alt="" style="display: block; margin: 20px auto;">
+    <div class="buttons">
+      <button class="btn login">Start Your Learning</button>
+      <button class="btn signup">Join a Live Demo</button>
+    </div>
+  </div>
+  <div class="panel">
+    <img src="C:\Users\KISHORE KUMAR\Desktop\HTML training\images\panel.jpg" alt="">
+  </div>
+  <img src="C:\Users\KISHORE KUMAR\Desktop\HTML training\images\page2.jpg" alt="">
+
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Learners Today, Leaders Tomorrow</h2>
+      <p>With our continuous research and development, we provide you with an excellent Aptitude training.</p>
+    </div>
+    <a href="#" class="register-btn">REGISTER NOW</a>
+  </section>
+
+  <section class="trusted-by">
+    <h2 class="section-title">Trusted By</h2>
+    
+    <div class="stats-container">
+      <div class="stat-box teal">
+        <div class="stat-icon-top">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="stat-content">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">COLLEGES</div>
+        </div>
+      </div>
+      
+      <div class="stat-box blue">
+        <div class="stat-content">
+          <div class="stat-number">150</div>
+          <div class="stat-label">PROFESSIONAL<br>TRAINERS</div>
+        </div>
+        <div class="stat-icon-bottom">
+          <i class="fas fa-chalkboard-teacher"></i>
+        </div>
+      </div>
+      
+      <div class="stat-box orange">
+        <div class="stat-icon-top">
+          <i class="fas fa-book"></i>
+        </div>
+        <div class="stat-content">
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">STUDY MATERIALS</div>
+          <div class="stat-sublabel">AGH LMS</div>
+        </div>
+      </div>
+      
+      <div class="stat-box red">
+        <div class="stat-content">
+          <div class="stat-number">1,00,000</div>
+          <div class="stat-label">STUDENTS</div>
+          <div class="stat-sublabel red-text">B2B:Placement Training</div>
+        </div>
+        <div class="stat-icon-bottom">
+          <i class="fas fa-user-graduate"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promise-section">
+    <div class="container">
+        <h1 class="section-title">Our Promise</h1>
+        <p class="section-subtitle">As part of our high quality service, we'd like to offer something extra too.</p>
+        
+        <div class="promise-grid">
+            <div class="promise-card">
+                <div class="card-line teal"></div>
+                <div class="card-content">
+                    <div class="card-icon teal">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="card-title">Top Code Quality</h3>
+                    <p class="card-description">
+                        Our commitment goes beyond mere code - it encompasses providing solutions. You receive W3C fully compliant markup, without any compromise on quality.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="promise-card">
+                <div class="card-line orange"></div>
+                <div class="card-content">
+                    <div class="card-icon orange">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="card-title">Responsive</h3>
+                    <p class="card-description">
+                        We understand the value of a positive attitude, timely responsiveness, and adaptability. We're dedicated to attentively listening and leveraging our utmost capabilities to serve you.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="promise-card">
+                <div class="card-line blue"></div>
+                <div class="card-content">
+                    <div class="card-icon blue">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="card-title">Rockstar Team</h3>
+                    <p class="card-description">
+                        Our expertise is our unique selling proposition. You'll have access to an all-star team of experienced professionals fully dedicated to serving you, armed with coding skills that are truly exceptional.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="promise-card">
+                <div class="card-line purple"></div>
+                <div class="card-content">
+                    <div class="card-icon purple">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="card-title">Fast Turn-arounds</h3>
+                    <p class="card-description">
+                        The importance of speed is on par with quality for us. We are swift, nimble, and capable of providing high-quality code within a timeframe that suits your preferences.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="promise-card">
+                <div class="card-line red"></div>
+                <div class="card-content">
+                    <div class="card-icon red">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="card-title">Life-time support</h3>
+                    <p class="card-description">
+                        Our commitment to code quality is exemplified by our enduring support. If any bugs happen to emerge in the future, feel free to reach out to us for assistance.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="promise-card">
+                <div class="card-line green"></div>
+                <div class="card-content">
+                    <div class="card-icon green">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="card-title">Secured Agreement</h3>
+                    <p class="card-description">
+                        The creative work you receive is entirely your own, and we unequivocally respect that. We assure you of our commitment and readiness to formalize this with a Non-Disclosure Agreement (NDA).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section --
+  <section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">Frequently <span class="highlight">Asked Questions</span></h2>
+        
+        <div class="faq-container">
+            <div class="faq-column">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What makes AGH different from other placement training institutes?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can AGH students secure placements in top companies?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is AGH's curriculum up-to-date with industry demands?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How does AGH ensure success in higher studies exams like GRE and GMAT?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What sets AGH's Government Jobs Training apart for competitive exams like Banking Exams and SSC?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-column">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How does AGH nurture students beyond academics?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Why is AGH more than just a training center?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is AGH's commitment to empowering students beyond boundaries?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can students join the AGH community and be part of this transformative journey?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How does AGH prepare students for industry-specific interviews?</span>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+        <div class="contact-content">
+            <h2 class="contact-title">GET IN TOUCH</h2>
+            <p class="contact-description">
+                Have questions or feedback? We're here to help. Send us a message and we'll respond soon.
+            </p>
+            <a href="#" class="btn-contact">Contact Us</a>
+        </div>
+        <div class="contact-image">
+            <img src="C:\Users\KISHORE KUMAR\Desktop\HTML training\images\get-in-touch.8c521c235d4bd711343c.jpg" alt="Contact us illustration">
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">APTITUDE GURU</span>
+                        <span class="logo-subtitle">HEMCHANDAN</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">My Courses</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Colleges</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Placement Prep</a></li>
+                        <li><a href="#">Higher Studies Prep</a></li>
+                        <li><a href="#">Goverment Jobs</a></li>
+                        <li><a href="#">Aptitude Prep</a></li>
+                        <li><a href="#">Technical Prep</a></li>
+                        <li><a href="#">Aptitude+Technical Prep</a></li>
+                        <li><a href="#">Service Based Company Prep</a></li>
+                        <li><a href="#">Product Based Company Prep</a></li>
+                        <li><a href="#">GRE</a></li>
+                        <li><a href="#">GATE</a></li>
+                        <li><a href="#">GMAT</a></li>
+                        <li><a href="#">CAT/XAT/MAT</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Schools</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">IIT JEE</a></li>
+                        <li><a href="#">NEET</a></li>
+                        <li><a href="#">Maths Olympiad</a></li>
+                        <li><a href="#">Science Olympiad</a></li>
+                        <li><a href="#">Cyber Olympiad</a></li>
+                        <li><a href="#">Package of All Olympiad</a></li>
+                        <li><a href="#">Aptitude</a></li>
+                        <li><a href="#">Mathematics</a></li>
+                        <li><a href="#">NTSE</a></li>
+                        <li><a href="#">Coding-C</a></li>
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">General Studies</a></li>
+                        <li><a href="#">Tuition 1st-12th</a></li>
+                        <li><a href="#">Quiz Competitions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Courses</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Placement Prep</a></li>
+                        <li><a href="#">Higher Studies Prep</a></li>
+                        <li><a href="#">Goverment Jobs Prep</a></li>
+                        <li><a href="#">IIT JEE/NEET Olympiad Prep</a></li>
+                        <li><a href="#">Coding Prep</a></li>
+                        <li><a href="#">Tutions 1st-12th</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Exams</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">UPSC</a></li>
+                        <li><a href="#">CAT/XAT/MAT</a></li>
+                        <li><a href="#">GRE/GMAT</a></li>
+                        <li><a href="#">GATE</a></li>
+                        <li><a href="#">IIT JEE/NEET</a></li>
+                        <li><a href="#">SAP</a></li>
+                        <li><a href="#">SSC/Bank Exams RRB</a></li>
+                        <li><a href="#">TNPSC</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Skill Development</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development-FullStack</a></li>
+                        <li><a href="#">Web Development-Frontend</a></li>
+                        <li><a href="#">Web Development Backend</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Soft Skills</a></li>
+                        <li><a href="#">Leadership Skills</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <h3 class="footer-heading">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 All Right Reserved By AGH</p>
+            <div class="footer-links-bottom">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund & Cancellation Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <script>
+    const text = "Aptitude Guru Hem|";
+    let i = 0;
+    const speed = 100;
+
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typed-text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
